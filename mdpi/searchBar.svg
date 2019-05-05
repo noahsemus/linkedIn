@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="265px" height="33px" viewBox="0 0 265 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>mdpi/searchBar</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="navBar" transform="translate(-230.000000, -8.000000)">
+            <g id="searchBar">
+                <g transform="translate(230.000000, 8.000000)">
+                    <rect id="searchBarBG" fill="#E1E9EE" fill-rule="nonzero" x="0" y="0" width="265" height="33" rx="2"></rect>
+                    <text id="Search" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="15" font-weight="normal" letter-spacing="0.108333334" fill="#283D4A">
+                        <tspan x="27" y="22">Search</tspan>
+                    </text>
+                    <g id="searchIcon" transform="translate(10.000000, 11.000000)" fill="#283D4A" fill-rule="nonzero">
+                        <path d="M8.01429136,7.34684098 C8.68667558,6.56467974 8.9193825,5.56432247 8.9193825,4.45969125 C8.9193825,1.99656947 6.92281304,0 4.45969125,0 C1.99656947,0 0,1.99656947 0,4.45969125 C0,6.92281304 1.99656947,8.9193825 4.45969125,8.9193825 C5.56432247,8.9193825 6.42479058,8.79504787 7.20695181,8.12266365 L10.9777015,12 L12,10.9777015 L8.01429136,7.34684098 Z M4.5,8 C2.56333333,8 1,6.43666667 1,4.5 C1,2.56333333 2.56333333,1 4.5,1 C6.43666667,1 8,2.56333333 8,4.5 C8,6.43666667 6.43666667,8 4.5,8 Z" id="search"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
