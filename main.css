@@ -3,6 +3,7 @@ body{
     box-sizing: border-box;
     padding-top: 50px;
     margin: 0;
+    position: relative;
 }
 
 nav{
@@ -19,8 +20,16 @@ nav{
     z-index: 99;
 }
 
+#mobileNav {
+    display: none;
+}
+
 #searchBox {
     margin-left: 8px;
+}
+
+#rightIconsComp {
+    display: none;
 }
 
 #navContent {
@@ -77,6 +86,7 @@ nav{
     margin-top: 450px;
     z-index: 1;
     background: white;
+    padding-bottom: 300px;
 }
 
 #contentContain {
@@ -87,6 +97,8 @@ nav{
     margin-right: 60px;
     display: inline-grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
 }
 
 #about {
@@ -152,6 +164,29 @@ h1 {
     letter-spacing: 0.16px;
     margin: 0px;
     margin-top: 4px;
+}
+
+.reg22 {
+    font-family: SourceSansPro-Regular;
+    font-size: 16px;
+    color: #283D4A;
+    letter-spacing: 0.12px;
+    margin: 0px;
+}
+
+.light16gray {
+    font-family: SourceSansPro-Regular;
+    font-size: 16px;
+    color: #8D8D8D;
+    letter-spacing: 0.12px;
+    margin: 0px;
+}
+
+.light16 {
+    font-family: SourceSansPro-Light;
+    font-size: 16px;
+    color: #283D4A;
+    letter-spacing: 0.12px;
 }
 
 .normLink {
@@ -227,13 +262,15 @@ h1 {
 }
 
 #highlights {
+    display: grid;
+    grid-template-columns: 1fr .25fr 1fr .25fr;
+    grid-template-rows: 0;
     position: relative;
     width: 100%;
     height: 250px;
     background: #F2F2F2;
     grid-column-start: 1;
     grid-column-end: 11;
-    grid-row: 2;
     padding-top: 24px;
     box-sizing: border-box;
     z-index: 1;
@@ -255,5 +292,736 @@ h1 {
     justify-self: center;
     align-items: center;
     grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#alGroup {
+    margin-top: 24px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#bothAtten {
+    margin-top: 24px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding-right: 50px;
+}
+
+.smallIcon {
+    width: 60px;
+    height: 60px;
+}
+
+.bigIcon {
+    width: 100px;
+    height: 100px;
+}
+
+#mutText {
+    margin-left: 16px;
+}
+
+#expDiv {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 480px;
+    border: 1px solid #C0C0C0;
+    border-left: none;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    padding-top: 24px;
+    box-sizing: border-box;
+    z-index: 1;
+    margin-top: 48px;
+    box-sizing: border-box;
+}
+
+#expMobile {
+    display: none;
+}
+
+.clone {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 2px);
+    margin-left: -100%;
+    padding-top: 24px;
+    box-sizing: border-box;
+    top: -1px;
+    border: 1px solid #C0C0C0;
+    border-right: none;
+}
+
+#cloneContent {
+    margin-top: 28px;
+    padding-left: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#timeline {
+    display: inline-block;
+    align-self: center;
+    margin-top: 25px;
+    width: 1250px;
+}
+
+#timelineContain {
+    padding-right: 90px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#education {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #C0C0C0;
+    position: relative;
+    width: 100%;
+    min-height: 250px;
+    margin-top: 10px;
+    padding-top: 70px;
+    padding-left: 32px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.edContain {
+    display: flex;
+    flex-direction: row;
+}
+
+.edContain + .edContain {
+    margin-top: 24px;
+}
+
+.moduleHead {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 24px;
+    margin-left: 32px;
+}
+
+#interests {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #C0C0C0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    padding-top: 62px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+    box-sizing: border-box;
+    z-index: 1;
+    justify-content: center;
+    hyphens: auto;
+}
+
+.blue01 {
+    height: 55px;
+    width: 130px;
+    outline: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 40px;
+    background: #0077B5;
+    box-shadow: 0 4px 20px 0 rgba(0,168,255,0.50);
+    border-radius: 2px;
+    font-family: SourceSansPro-Semibold;
+    font-size: 22px;
+    color: #FFFFFF;
+    letter-spacing: 0.16px;
+    text-align: center;
+}
+
+.blue02 {
+    height: 55px;
+    width: 130px;
+    outline: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 16px;
+    border: 1px solid #0077B5;
+    border-radius: 2px;
+    font-family: SourceSansPro-Semibold;
+    font-size: 22px;
+    color: #0077B5;
+    letter-spacing: 0.16px;
+    text-align: center;
+}
+
+.gray01 {
+    height: 55px;
+    width: 130px;
+    outline: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 16px;
+    border: 1px solid #8D8D8D;
+    border-radius: 2px;
+    font-family: SourceSansPro-Semibold;
+    font-size: 22px;
+    color: #8D8D8D;
+    letter-spacing: 0.16px;
+    text-align: center;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #C0C0C0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    grid-column-start: 5;
+    grid-column-end: 11;
+    padding-top: 80px;
+    padding-left: 16px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+    box-sizing: border-box;
+    z-index: 1;
+    justify-content: center;
+}
+
+#columnContain01 {
+    grid-column-start: 1;
     grid-column-end: 5;
+}
+
+#columnContain02 {
+    grid-column-start: 5;
+    grid-column-end: 11;
+    grid-column-end: 11;
+}
+
+.horAlign {
+    display: flex;
+    align-items: center;
+}
+
+.tinyIcon {
+    width: 30px;
+    height: 30px;
+}
+
+.strongStuff {
+    color: #283D4A;
+}
+
+#accomplishments {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #C0C0C0;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    grid-column-start: 5;
+    grid-column-end: 11;
+    padding-top: 80px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+    box-sizing: border-box;
+    z-index: 1;
+    justify-content: top;
+    overflow: hidden;
+}
+
+.acContain {
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+#accompTitle {
+    text-decoration: underline;
+    margin-bottom: 4px;
+}
+
+.cardImg {
+    width: 100%;
+    height: 175px;
+    background-image: url(Assets/neatImg.jpg);
+    background-size: cover;
+    border-radius: 2px;
+    margin-bottom: 12px;
+}
+
+#acButton {
+    position: absolute;
+    bottom: 32px;
+}
+
+.gradOverlay {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 40%;
+    background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%, #FFFFFF 45%);
+}
+
+#footerContain {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: #F2F2F2;
+}
+
+#footer {
+    position: relative;
+    width: 100%;
+    height: 255px;
+}
+
+#buttonContain {
+    position: relative;
+    grid-column-start: 12;
+    grid-column-end: 12;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: flex-end;
+    width: 100%;
+    bottom: 30px;
+}
+
+#buttonBox {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+#alsoView {
+    position: absolute;
+    width: 500px;
+    background: #F2F2F2;
+    height: auto;
+    top: 240px;
+    padding-left: 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.alPic {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+#al01 {
+    background-image: url(profilePics/ca.jpg);
+}
+
+#al02 {
+    background-image: url(profilePics/jyp.jpg);
+}
+
+#al03 {
+    background-image: url(profilePics/mu.jpg);
+}
+
+#al04 {
+    background-image: url(profilePics/pb.jpg);
+}
+
+#al05 {
+    background-image: url(profilePics/nl.JPG);
+}
+
+#al06 {
+    background-image: url(profilePics/nr.jpg);
+}
+
+#al07 {
+    background-image: url(profilePics/ed.jpg);
+}
+
+#al08 {
+    background-image: url(profilePics/mw.jpg);
+}
+
+#al09 {
+    background-image: url(profilePics/sjy.jpg);
+}
+
+#al10 {
+    background-image: url(profilePics/sc.jpg);
+}
+
+#alText {
+    margin-left: 16px;
+    width: 180px;
+}
+
+#expandIcon {
+    display: none;
+}
+
+#mobileButton01 {
+    display: none;
+}
+
+#mobileButton02 {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1100px){
+    
+    #rightIcons {
+        display: none;
+    }
+    
+    #rightIconsComp {
+        display: block;
+    }
+    
+    h1 {
+        font-size: 40px;
+        margin-bottom: 12px;
+    }
+    
+    #contentContain {
+        grid-gap: 20px;
+    }
+    
+    #about {
+        grid-column-end: 6;
+    }
+    
+    #briefcase {
+        grid-column-end: 12;
+    }
+    
+    #education {
+        padding-bottom: 24px;
+        padding-right: 16px;
+    }
+    
+    .edContain {
+        flex-direction: row;
+    }
+    
+    #mutText {
+        margin-left: 16px;
+        margin-top: 0px;
+    }
+    
+    #skills {
+        padding-left: 32px;
+    }
+    
+    #mutConnections {
+        margin-top: 48px;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    
+    #bothAtten {
+        margin-top: 48px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 0px;
+    }
+    
+    #mutPic {
+        position: relative;
+        right: 0px;
+    }
+    
+    #alText {
+        display: none;
+    }
+    
+    #alsoViewTitle {
+        display: none;
+    }
+    
+    #expandIcon {
+        display: block;
+        margin-left: 7px;
+    }
+    
+    #alsoView {
+        right: -395px;
+        width: 400px;
+        padding-left: 20px;
+    }
+    
+    #expDiv {
+        grid-column-end: 12;
+    }
+    
+    #columnContain01 {
+        grid-column-end: 6;
+    }
+    
+    #columnContain02 {
+        grid-column-start: 6;
+        grid-column-end: 12;
+    }
+    
+    #highlights {
+        grid-column-end: 12;
+    }
+    
+    #aboutLinks {
+        flex-direction: column;
+    }
+    
+    .normLink + .normLink {
+        margin-left: 0px;
+        margin-top: 8px
+    }
+    
+}
+
+@media (max-width: 900px){
+    .edContain {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #mutText {
+        margin-left: 0px;
+        margin-top: 8px
+    }
+}
+
+@media (max-width: 700px) {
+    
+    #header {
+        height: 250px;
+        margin: 0px;
+    }
+    
+    .content {
+        margin-top: 250px;
+        z-index: 99;
+        background: white;
+        padding-bottom: 150px;
+    }
+    
+    #contentContain {
+        display: grid;
+        max-width: 800px;
+        margin-left: 0px;
+        margin-right: 0px;
+        background: white;
+    }
+    
+    #mobileNavContain {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        width: 100vw;
+        bottom: 0px;
+        z-index: 999999;
+        background: #283D4A;
+    }
+    
+    #mobileNav {
+        display: block;
+    }
+    
+    #about {
+        text-align: center;
+        grid-column: 1 / span 12;
+        grid-row: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #briefcase {
+        margin-top: -100px;
+        grid-column: 1 / span 12;
+        grid-row: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #buttonContain {
+       display: none;
+    }
+    
+    #mobileButton01 {
+        display: block;
+        width: 80%;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 8px;
+    }
+    
+    #mobileButton02 {
+        display: block;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    
+    #mobileButtons {
+        display: flex;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    
+    #aboutLinks {
+        margin-top: 32px;
+    }
+    
+    .normLink + .normLink {
+        margin-top: 16px;
+    }
+    
+    #aboutDescription {
+        margin-top: 32px;
+        position: relative;
+        height: auto;
+        background: #F2F2F2;
+        padding-top: 24px;
+        padding-bottom: 48px;
+        text-align: left;
+        z-index: 1;
+    }
+    
+    #aboutDescBG {
+        position: absolute;
+        background: #F2F2F2;
+        height: 100%;
+        width: 200%;
+        margin-left: -50%;
+        top: 0px;
+        z-index: -1;
+    }
+    
+    #highlights {
+        display: flex;
+        height: 300px;
+        grid-column: 1 / span 12;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #highlightsBG {
+        width: 200%;
+        margin-left: -50%;
+    }
+    
+    #mutConnections {
+        margin-top: 16px;
+        flex-direction: row;
+    }
+    
+    #bothAtten {
+        flex-direction: row;
+    }
+    
+    #mutText {
+        margin-left: 12px;
+        margin-top: 0;
+    }
+    
+    #expDiv {
+        display: none;
+    }
+    
+    #expMobileContain {
+        display: flex;
+        position: relative;
+        justify-content: left;
+        grid-column: 1 / span 12;
+        width: 100%;
+        height:700px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        box-sizing: border-box;
+        border: 1px solid #C0C0C0;
+    }
+    
+    #expMobile {
+        display: block;
+        position: absolute;
+        top: 24px;
+        width: 350px;
+        left: -10px;
+    }
+    
+    #columnContain01 {
+        grid-column: 1 / span 12;
+    }
+    
+    #columnContain02 {
+        grid-column: 1 / span 12;
+    }
+    
+    .edContain {
+        flex-direction: row;
+    }
+    
+    #footer {
+        display: none;
+    }
+    
+    #rightIconsComp {
+        display: none;
+    }
+    
+    #smallLogo {
+        display: none;
+    }
+    
+    nav {
+        z-index: 0;
+    }
+    
+    .edContain {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
 }
