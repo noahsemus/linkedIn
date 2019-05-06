@@ -51,6 +51,10 @@ nav{
     right: 0;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 #header {
     position: fixed;
     display: flex;
