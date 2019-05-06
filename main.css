@@ -934,8 +934,8 @@ h1 {
         position: absolute;
         background: #F2F2F2;
         height: 100%;
-        width: 200%;
-        margin-left: -50%;
+        width: calc(100% + 40px);
+        margin-left: -20px;
         top: 0px;
         z-index: -1;
     }
@@ -950,8 +950,7 @@ h1 {
     }
     
     #highlightsBG {
-        width: 200%;
-        margin-left: -50%;
+        width: 100%;
     }
     
     #mutConnections {
